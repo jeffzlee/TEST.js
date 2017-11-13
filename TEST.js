@@ -1,7 +1,9 @@
-function TEST(pin) {
+function TEST(pin,interval) {
   this.pin = pin;
+  this.interval=interval;
   }
-TEST.prototype.pinMode = function () {
+TEST.prototype.pinMode = function (interval) {
+  setTimeout(function () {}, interval);
   console.log(getPinMode(this.pin));
 };
 

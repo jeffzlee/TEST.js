@@ -1,6 +1,6 @@
 function TEST(pin) {
   this.pin = pin;
-  function getPinMode(pin) {
+  getPinMode(pin) {
   console.log(getPinMode(pin));
 };
 };

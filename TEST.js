@@ -3,7 +3,7 @@ function TEST(pin) {
 }
 
 TEST.prototype.getPinMode = function (pin) {
-  getPinMode(pin)
+  console.log(getPinMode(pin));
 };
 
 exports.connect = function(pin) {

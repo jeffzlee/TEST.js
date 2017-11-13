@@ -1,7 +1,7 @@
 function TEST(pin) {
   this.pin = pin;
   }
-TEST.prototype.getPinMode = function () {
+TEST.prototype.pMode = function () {
   console.log(getPinMode(this.pin));
 };
 

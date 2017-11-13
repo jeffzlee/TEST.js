@@ -3,9 +3,8 @@ function TEST(pin,interval) {
   this.interval=interval;
   }
 TEST.prototype.pinMode = function (interval) {
-  setTimeout(function () {}, interval);
-  console.log(getPinMode(this.pin));
-};
+  setInterval(function () {console.log(getPinMode(this.pin));}, interval);
+  };
 
 exports.connect = function(pin) {
     return new TEST(pin);

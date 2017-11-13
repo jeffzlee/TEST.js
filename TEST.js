@@ -1,9 +1,9 @@
-function TEST(pin,interval) {
+function TEST(pin) {
   this.pin = pin;
-  this.interval=interval;
   }
 TEST.prototype.pinMode = function (interval) {
-  setInterval(function () {console.log(getPinMode(this.pin));}, interval);
+  setInterval(function () {}, interval);
+  console.log(getPinMode(this.pin));
   };
 
 exports.connect = function(pin) {

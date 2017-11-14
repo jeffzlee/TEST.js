@@ -3,7 +3,7 @@ function TEST(pin) {
   }
 TEST.prototype.pinMode = function (interval) {
   console.log(interval);
-  setInterval(function () {console.log(getPinMode(this.pin));}, interval);
+  setTimeOut(function () {console.log(getPinMode(this.pin))}, interval);
   
   };
 
